@@ -70,3 +70,9 @@ _:future ion-header .header-background,
   --ion-padding: 20px;
   --ion-margin: 20px;
 }
+
+@import "md3/theme.css";
+
+:root.ion-palette-dark {
+  color-scheme: dark !important;
+}
