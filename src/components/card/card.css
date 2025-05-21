@@ -18,18 +18,6 @@ component-card ion-card .header-img {
   height: 120px;
 }
 
-component-card ion-card ion-card-subtitle {
-  color: var(--text-lighter);
-}
-
-component-card ion-card ion-card-title {
-  color: var(--text-darker);
-}
-
-component-card ion-card ion-card-content {
-  color: var(--text-light);
-}
-
 component-card ion-card ion-list ion-item {
   --padding-start: 0;
 }
@@ -52,7 +40,6 @@ component-card .action-card ion-col:last-child {
 }
 
 component-card .action-card .button-clear {
-  --color: #c6cede;
   --border-radius: 50%;
   --padding-top: 0;
   --padding-end: 0;
@@ -85,16 +72,10 @@ component-card .coworker-card h1 {
   font-size: 1.125rem;
 }
 
-component-card .coworker-card p {
-  color: var(--text-light);
-}
-
 component-card .coworker-card ion-icon {
   align-self: start;
   margin-top: 10px;
   margin-right: 29px;
-
-  color: var(--text-lightest);
 }
 
 /* Music Card */
@@ -116,12 +97,6 @@ component-card .music-card img {
 component-card .music-card h2 {
   font-weight: 600;
   font-size: 1rem;
-
-  color: var(--text-darker);
-}
-
-component-card .music-card p {
-  color: var(--text-light);
 }
 
 component-card .music-card ion-button {

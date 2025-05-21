@@ -43,7 +43,7 @@ export class Card {
           </ion-card-content>
         </ion-card>
 
-        <ion-card class="apps-card">
+        <ion-card class="apps-card mat-outlined">
           <ion-card-header>
             <ion-card-subtitle>Your Daily List</ion-card-subtitle>
             <ion-card-title>Ionic Apps We Think You'll Love.</ion-card-title>
@@ -90,7 +90,7 @@ export class Card {
           </ion-card-content>
         </ion-card>
 
-        <ion-card class="coworker-card">
+        <ion-card class="coworker-card mat-filled">
           <img src="/assets/card-coworker-header.png" class="header-img"/>
           <ion-card-content>
             <ion-list lines="none">
@@ -128,7 +128,7 @@ export class Card {
           </ion-card-content>
         </ion-card>
 
-        <ion-card class="music-card">
+        <ion-card class="music-card mat-elevated">
           <ion-card-header>
             <img src="/assets/card-album.png"/>
           </ion-card-header>
