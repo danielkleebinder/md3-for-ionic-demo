@@ -73,6 +73,10 @@ _:future ion-header .header-background,
 
 @import "md3/theme.css";
 
+:root {
+  color-scheme: light dark;
+}
+
 :root.ion-palette-dark {
-  color-scheme: dark !important;
+  color-scheme: dark;
 }
