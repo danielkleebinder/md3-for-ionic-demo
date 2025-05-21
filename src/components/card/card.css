@@ -1,7 +1,3 @@
-.ios body.dark component-card {
-  --ion-item-background: #1c1c1e;
-}
-
 component-card {
   --background-darker: var(--ion-background-color-step-200, #e9edf3);
 

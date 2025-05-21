@@ -1,5 +1,5 @@
-import { Component, h } from '@stencil/core';
-import { getComponents } from '../../utils/component-utils';
+import {Component, h} from '@stencil/core';
+import {getComponents} from '../../utils/component-utils';
 
 @Component({
   tag: 'app-home',
@@ -16,14 +16,14 @@ export class AppHome {
     return [
       <ion-header translucent={true}>
         <ion-toolbar>
-          <ion-title>Ionic Framework</ion-title>
+          <ion-title>Ionic Framework (md3)</ion-title>
         </ion-toolbar>
       </ion-header>,
 
       <ion-content fullscreen={true}>
         <ion-header collapse="condense">
           <ion-toolbar>
-            <ion-title size="large">Ionic Framework</ion-title>
+            <ion-title size="large">Ionic Framework (md3)</ion-title>
           </ion-toolbar>
         </ion-header>
 
@@ -35,6 +35,11 @@ export class AppHome {
             </ion-toggle>
           </ion-item>
         </ion-list>
+
+        <p>
+          Have a look at the designs of Ionic components with Material Design 3 applied to them. Visit to <a
+          href="https://github.com/danielkleebinder/md3-for-ionic" target="_blank">Github</a> to learn more about this project 🚀
+        </p>
 
         <ion-list class="home-list">
           {this.components.map(component => {

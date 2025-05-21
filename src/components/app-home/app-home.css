@@ -10,17 +10,17 @@
   --transition: none;
 }
 
-.theme-list,
-.home-list {
-  padding-bottom: 40px !important;
-}
-
 .theme-list ion-toggle {
   padding-right: 0;
 }
 
 .home-list {
   padding-top: 0 !important;
+}
+
+p {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 
@@ -63,11 +63,11 @@
 }
 
 .component-icon-dark {
-  background: var(--ion-background-color-step-850, #27323e);
-  color: var(--ion-item-background, #fff);
+  background: var(--mat-sys-inverse-surface);
+  color: var(--mat-sys-inverse-on-surface) !important;
 }
 
 .component-icon-primary {
-  background: var(--ion-color-primary);
-  color: #fff;
+  background: var(--mat-sys-primary);
+  color: var(--mat-sys-on-primary) !important;
 }
