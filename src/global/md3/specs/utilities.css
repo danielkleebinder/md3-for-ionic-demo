@@ -1,5 +1,5 @@
 :root {
-
+  
   /* Elevation steps */
   --mat-sys-level0: 0px 0px 0px 0px color-mix(in srgb, var(--mat-sys-shadow), transparent 80%), 0px 0px 0px 0px color-mix(in srgb, var(--mat-sys-shadow), transparent 86%), 0px 0px 0px 0px color-mix(in srgb, var(--mat-sys-shadow), transparent 88%);
   --mat-sys-level1: 0px 3px 1px -2px color-mix(in srgb, var(--mat-sys-shadow), transparent 80%), 0px 2px 2px 0px color-mix(in srgb, var(--mat-sys-shadow), transparent 86%), 0px 1px 5px 0px color-mix(in srgb, var(--mat-sys-shadow), transparent 88%);
@@ -7,7 +7,7 @@
   --mat-sys-level3: 0px 5px 5px -3px color-mix(in srgb, var(--mat-sys-shadow), transparent 80%), 0px 8px 10px 1px color-mix(in srgb, var(--mat-sys-shadow), transparent 86%), 0px 3px 14px 2px color-mix(in srgb, var(--mat-sys-shadow), transparent 88%);
   --mat-sys-level4: 0px 5px 5px -3px color-mix(in srgb, var(--mat-sys-shadow), transparent 80%), 0px 8px 10px 1px color-mix(in srgb, var(--mat-sys-shadow), transparent 86%), 0px 3px 14px 2px color-mix(in srgb, var(--mat-sys-shadow), transparent 88%);
   --mat-sys-level5: 0px 8px 10px -6px color-mix(in srgb, var(--mat-sys-shadow), transparent 80%), 0px 16px 24px 2px color-mix(in srgb, var(--mat-sys-shadow), transparent 86%), 0px 6px 30px 5px color-mix(in srgb, var(--mat-sys-shadow), transparent 88%);
-
+  
   /* Corner shapes */
   --mat-sys-corner-none: 0;
   --mat-sys-corner-extra-small: 4px;
@@ -20,7 +20,7 @@
   --mat-sys-corner-extra-large: 28px;
   --mat-sys-corner-extra-large-top: 28px 28px 0 0;
   --mat-sys-corner-full: 1024px;
-
+  
   /* Expressive spring functions */
   --mat-sys-expressive-fast-spatial: cubic-bezier(0.42, 1.67, 0.21, 0.90);
   --mat-sys-expressive-default-spatial: cubic-bezier(0.38, 1.21, 0.22, 1.00);
@@ -28,18 +28,18 @@
   --mat-sys-expressive-fast-effects: cubic-bezier(0.31, 0.94, 0.34, 1.00);
   --mat-sys-expressive-default-effects: cubic-bezier(0.34, 0.80, 0.34, 1.00);
   --mat-sys-expressive-slow-effects: cubic-bezier(0.34, 0.88, 0.34, 1.00);
-
+  
   --mat-sys-standard-fast-spatial: cubic-bezier(0.27, 1.06, 0.18, 1.00);
   --mat-sys-standard-default-spatial: cubic-bezier(0.27, 1.06, 0.18, 1.00);
   --mat-sys-standard-slow-spatial: cubic-bezier(0.27, 1.06, 0.18, 1.00);
   --mat-sys-standard-fast-effects: cubic-bezier(0.31, 0.94, 0.34, 1.00);
   --mat-sys-standard-default-effects: cubic-bezier(0.34, 0.80, 0.34, 1.00);
   --mat-sys-standard-slow-effects: cubic-bezier(0.34, 0.88, 0.34, 1.00);
-
+  
   --mat-sys-expressive-fast-spring: linear(0.00, 0.0612, 0.244, 0.486, 0.732, 0.945, 1.10, 1.20, 1.23, 1.22, 1.18, 1.13, 1.07, 1.02, 0.980, 0.956, 0.946, 0.947, 0.955, 0.968, 0.982, 0.994, 1.00, 1.01, 1.01, 1.01, 1.01, 1.01, 1.00, 1.00, 0.999, 0.998, 0.997, 0.997, 0.997, 0.998, 0.999, 1.00, 1.00);
   --mat-sys-expressive-default-spring: linear(0.00, 0.0612, 0.244, 0.486, 0.732, 0.945, 1.10, 1.20, 1.23, 1.22, 1.18, 1.13, 1.07, 1.02, 0.980, 0.956, 0.946, 0.947, 0.955, 0.968, 0.982, 0.994, 1.00, 1.01, 1.01, 1.01, 1.01, 1.01, 1.00, 1.00, 0.999, 0.998, 0.997, 0.997, 0.997, 0.998, 0.999, 1.00, 1.00);
   --mat-sys-expressive-slow-spring: linear(0.00, 0.126, 0.320, 0.519, 0.690, 0.822, 0.915, 0.974, 1.01, 1.02, 1.03, 1.03, 1.02, 1.02, 1.01, 1.01, 1.00, 1.00, 1.00, 1.00);
-
+  
   /* Expressive durations */
   --mat-sys-expressive-fast-spatial-duration: 350ms;
   --mat-sys-expressive-default-spatial-duration: 500ms;
@@ -47,18 +47,18 @@
   --mat-sys-expressive-fast-effects-duration: 150ms;
   --mat-sys-expressive-default-effects-duration: 200ms;
   --mat-sys-expressive-slow-effects-duration: 300ms;
-
+  
   --mat-sys-standard-fast-spatial-duration: 350ms;
   --mat-sys-standard-default-spatial-duration: 500ms;
   --mat-sys-standard-slow-spatial-duration: 750ms;
   --mat-sys-standard-fast-effects-duration: 150ms;
   --mat-sys-standard-default-effects-duration: 200ms;
   --mat-sys-standard-slow-effects-duration: 300ms;
-
+  
   --mat-sys-expressive-fast-spring-duration: 350ms;
   --mat-sys-expressive-default-spring-duration: 500ms;
   --mat-sys-expressive-slow-spring-duration: 750ms;
-
+  
   /* Easing functions */
   --mat-sys-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
   --mat-sys-motion-easing-emphasized-accelerate: cubic-bezier(0.3, 0, 0.8, 0.15);
@@ -70,7 +70,7 @@
   --mat-sys-motion-easing-legacy-accelerate: cubic-bezier(0.4, 0, 1, 1);
   --mat-sys-motion-easing-legacy-decelerate: cubic-bezier(0, 0, 0.2, 1);
   --mat-sys-motion-easing-linear: cubic-bezier(0, 0, 1, 1);
-
+  
   /* Durations */
   --mat-sys-motion-duration-short-1: 50ms;
   --mat-sys-motion-duration-short-2: 100ms;
@@ -88,7 +88,7 @@
   --mat-sys-motion-duration-extra-long-2: 800ms;
   --mat-sys-motion-duration-extra-long-3: 900ms;
   --mat-sys-motion-duration-extra-long-4: 1000ms;
-
+  
   /* Motion path styles */
   --mat-sys-motion-path: linear;
 }
