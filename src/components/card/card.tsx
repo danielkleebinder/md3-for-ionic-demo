@@ -141,13 +141,13 @@ export class Card {
             <ion-button color="dark" fill="clear" size="small">
               <ion-icon slot="icon-only" name="shuffle"></ion-icon>
             </ion-button>
-            <ion-button color="dark" fill="clear" size="large">
+            <ion-button color="dark" fill="clear" size="small">
               <ion-icon slot="icon-only" name="play-back"></ion-icon>
             </ion-button>
             <ion-button color="dark" fill="clear" class="button-largest">
               <ion-icon slot="icon-only" name="play"></ion-icon>
             </ion-button>
-            <ion-button color="dark" fill="clear" size="large">
+            <ion-button color="dark" fill="clear" size="small">
               <ion-icon slot="icon-only" name="play-forward"></ion-icon>
             </ion-button>
             <ion-button color="dark" fill="clear" size="small">

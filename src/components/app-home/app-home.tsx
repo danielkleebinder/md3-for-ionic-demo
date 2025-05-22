@@ -36,10 +36,13 @@ export class AppHome {
           </ion-item>
         </ion-list>
 
-        <p>
-          Have a look at the designs of Ionic components with Material Design 3 applied to them. Visit to <a
-          href="https://github.com/danielkleebinder/md3-for-ionic" target="_blank">Github</a> to learn more about this project 🚀
-        </p>
+        <ion-item>
+          <ion-label>
+            Have a look at the designs of Ionic components with Material Design 3 applied to them. Visit <a
+            href="https://github.com/danielkleebinder/md3-for-ionic" target="_blank">Github</a> to learn more about this
+            project 🚀
+          </ion-label>
+        </ion-item>
 
         <ion-list class="home-list">
           {this.components.map(component => {

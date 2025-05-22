@@ -24,8 +24,17 @@ export class Button {
             </ion-label>
           </ion-list-header>
           <ion-button size="small">Default</ion-button>
+          <ion-button size="small" class="md-square">Default Squared</ion-button>
           <ion-button size="small" color="secondary">Secondary</ion-button>
+          <ion-button size="small" color="secondary">
+            <ion-icon slot="start" name="mail"></ion-icon>
+            Leading Icon
+          </ion-button>
           <ion-button size="small" color="tertiary">Tertiary</ion-button>
+          <ion-button size="small" color="tertiary">
+            Trailing Icon
+            <ion-icon slot="end" name="videocam"></ion-icon>
+          </ion-button>
         </section>
 
         <section>
