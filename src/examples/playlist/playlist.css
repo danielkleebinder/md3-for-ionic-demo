@@ -1,0 +1,50 @@
+ion-content {
+  & > .playlist-image,
+  & > .playlist-list,
+  & > .playlist-description,
+  & > .playlist-actions {
+    margin-left: 16px !important;
+    margin-right: 16px !important;
+  }
+}
+
+.playlist-header {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.playlist-image {
+  border-radius: var(--mat-sys-corner-large);
+  overflow: hidden;
+}
+
+.playlist-actions {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+
+  ion-button.button-shuffle {
+    --padding-start: 32px !important;
+    --padding-end: 32px !important;
+  }
+
+  ion-button.button-more {
+    --padding-start: 16px !important;
+    --padding-end: 16px !important;
+  }
+}
+
+.playlist-list {
+  [slot=start] {
+    font: var(--mat-sys-title-large);
+    letter-spacing: var(--mat-sys-title-large-letter-spacing);
+  }
+
+  ion-button[slot=end] {
+    --padding-start: 6px !important;
+    --padding-end: 6px !important;
+  }
+}

@@ -10,7 +10,7 @@ export class Toast {
   openToast = async () => {
     const toast = await toastController.create({
       color: 'dark',
-      duration: 2000,
+      duration: 200000,
       message: 'Paired successfully',
       buttons: [{
         text: 'Close',

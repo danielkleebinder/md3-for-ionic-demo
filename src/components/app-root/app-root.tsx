@@ -1,22 +1,29 @@
-import { Component, h } from '@stencil/core';
-import { getComponents } from '../../utils/component-utils';
+import {Component, h} from '@stencil/core';
+import {getComponents} from '../../utils/component-utils';
+import {getExamples} from '../../utils/example-utils';
 
 @Component({
   tag: 'app-root',
   styleUrl: 'app-root.css'
 })
 export class AppRoot {
-  components = getComponents();
+  private readonly components = getComponents();
+  private readonly examples = getExamples();
 
   render() {
     return (
       <ion-app>
         <ion-router useHash={false}>
-          <ion-route url="/" component="app-home" />
-          <ion-route url="/component" component="app-home" />
+          <ion-route url="/" component="app-home"/>
+          <ion-route url="/component" component="app-home"/>
           {this.components.filter(c => c.name !== 'tabs').map(component => {
             return (
-              <ion-route url={`/component/${component.id}`} component={`component-${component.id}`} />
+              <ion-route url={`/component/${component.id}`} component={`component-${component.id}`}/>
+            );
+          })}
+          {this.examples.filter(c => c.name !== 'tabs').map(example => {
+            return (
+              <ion-route url={`/example/${example.id}`} component={`example-${example.id}`}/>
             );
           })}
           <ion-route component="component-tabs">
@@ -28,7 +35,7 @@ export class AppRoot {
             </ion-route>
           </ion-route>
         </ion-router>
-        <ion-nav />
+        <ion-nav/>
       </ion-app>
     );
   }

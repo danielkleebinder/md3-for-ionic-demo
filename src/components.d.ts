@@ -110,6 +110,8 @@ export namespace Components {
     }
     interface ComponentToolbar {
     }
+    interface ExamplePlaylist {
+    }
     interface PopoverExamplePage {
     }
 }
@@ -420,6 +422,12 @@ declare global {
         prototype: HTMLComponentToolbarElement;
         new (): HTMLComponentToolbarElement;
     };
+    interface HTMLExamplePlaylistElement extends Components.ExamplePlaylist, HTMLStencilElement {
+    }
+    var HTMLExamplePlaylistElement: {
+        prototype: HTMLExamplePlaylistElement;
+        new (): HTMLExamplePlaylistElement;
+    };
     interface HTMLPopoverExamplePageElement extends Components.PopoverExamplePage, HTMLStencilElement {
     }
     var HTMLPopoverExamplePageElement: {
@@ -478,6 +486,7 @@ declare global {
         "component-toast": HTMLComponentToastElement;
         "component-toggle": HTMLComponentToggleElement;
         "component-toolbar": HTMLComponentToolbarElement;
+        "example-playlist": HTMLExamplePlaylistElement;
         "popover-example-page": HTMLPopoverExamplePageElement;
     }
 }
@@ -586,6 +595,8 @@ declare namespace LocalJSX {
     }
     interface ComponentToolbar {
     }
+    interface ExamplePlaylist {
+    }
     interface PopoverExamplePage {
     }
     interface IntrinsicElements {
@@ -640,6 +651,7 @@ declare namespace LocalJSX {
         "component-toast": ComponentToast;
         "component-toggle": ComponentToggle;
         "component-toolbar": ComponentToolbar;
+        "example-playlist": ExamplePlaylist;
         "popover-example-page": PopoverExamplePage;
     }
 }
@@ -698,6 +710,7 @@ declare module "@stencil/core" {
             "component-toast": LocalJSX.ComponentToast & JSXBase.HTMLAttributes<HTMLComponentToastElement>;
             "component-toggle": LocalJSX.ComponentToggle & JSXBase.HTMLAttributes<HTMLComponentToggleElement>;
             "component-toolbar": LocalJSX.ComponentToolbar & JSXBase.HTMLAttributes<HTMLComponentToolbarElement>;
+            "example-playlist": LocalJSX.ExamplePlaylist & JSXBase.HTMLAttributes<HTMLExamplePlaylistElement>;
             "popover-example-page": LocalJSX.PopoverExamplePage & JSXBase.HTMLAttributes<HTMLPopoverExamplePageElement>;
         }
     }

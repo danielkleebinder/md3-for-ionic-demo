@@ -9,7 +9,7 @@ describe('app-home', () => {
     expect(element).toHaveClass('hydrated');
   });
 
-  it('contains an Accordion button', async () => {
+  it('contains an Playlist button', async () => {
     const page = await newE2EPage();
     await page.setContent('<app-home></app-home>');
 

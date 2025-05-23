@@ -50,10 +50,6 @@
   font-weight: 450 500;
 }
 
-.component-content {
-  --background: var(--ion-background-color-step-50, #f2f2f7);
-}
-
 /*
  * When placed inside of an element with a background/border color
  * the backdrop-filter is blurring it into the header in Safari

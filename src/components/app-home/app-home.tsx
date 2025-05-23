@@ -1,12 +1,14 @@
 import {Component, h} from '@stencil/core';
 import {getComponents} from '../../utils/component-utils';
+import {getExamples} from '../../utils/example-utils';
 
 @Component({
   tag: 'app-home',
   styleUrl: 'app-home.css'
 })
 export class AppHome {
-  components = getComponents();
+  private readonly components = getComponents();
+  private readonly examples = getExamples();
 
   toggleDarkMode = () => {
     document.documentElement.classList.toggle('ion-palette-dark');
@@ -45,13 +47,41 @@ export class AppHome {
         </ion-item>
 
         <ion-list class="home-list">
+          <ion-list-header>
+            <ion-label>
+              Components
+            </ion-label>
+          </ion-list-header>
           {this.components.map(component => {
             const href = component.id === 'tabs' ? '/component/tabs/music' : `/component/${component.id}`;
 
             return (
               <ion-item href={href}>
-                <ion-icon slot="start" icon={component.icon} class="component-icon component-icon-primary"></ion-icon>
+                <ion-icon slot="start" icon={component.icon}
+                          class="component-icon component-icon-primary"></ion-icon>
                 <ion-label>{component.name}</ion-label>
+              </ion-item>
+            );
+          })}
+        </ion-list>
+
+        <ion-list class="home-list">
+          <ion-list-header>
+            <ion-label>
+              Examples
+            </ion-label>
+          </ion-list-header>
+          {this.examples.map(example => {
+            const href = `/example/${example.id}`;
+
+            return (
+              <ion-item href={href}>
+                <ion-icon slot="start" icon={example.icon}
+                          class="component-icon component-icon-primary"></ion-icon>
+                <ion-label>
+                  <h2>{example.name}</h2>
+                  <p>{example.description}</p>
+                </ion-label>
               </ion-item>
             );
           })}
