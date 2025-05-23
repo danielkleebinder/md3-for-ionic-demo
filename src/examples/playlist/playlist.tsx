@@ -1,4 +1,4 @@
-import {Component, h} from '@stencil/core';
+import {Component, h, State} from '@stencil/core';
 
 @Component({
   tag: 'example-playlist',
@@ -6,7 +6,8 @@ import {Component, h} from '@stencil/core';
 })
 export class Playlist {
 
-  private readonly playlist = [
+  @State()
+  private playlist = [
     {name: 'summer air', album: 'water house'},
     {name: 'slow down', album: 'water house'},
     {name: 'fahrenheit', album: 'water house'},
@@ -19,6 +20,12 @@ export class Playlist {
   ];
 
   render() {
+    const shufflePlaylist = () => {
+      this.playlist = this.playlist
+        .map(value => ({value, sort: Math.random()}))
+        .sort((a, b) => a.sort - b.sort)
+        .map(({value}) => value)
+    }
     return [
       <ion-content fullscreen class="component-content">
         <ion-header class="playlist-header">
@@ -31,9 +38,17 @@ export class Playlist {
               <small>Playlist by Sam</small>
             </ion-title>
             <ion-buttons slot="end">
-              <ion-button>
+              <ion-button id="playlist-more-trigger">
                 <ion-icon slot="icon-only" name="ellipsis-vertical"></ion-icon>
               </ion-button>
+              <ion-popover trigger="playlist-more-trigger" trigger-action="click">
+                <ion-list lines="none">
+                  <ion-item button>
+                    <ion-icon slot="start" name="trash"></ion-icon>
+                    <ion-label>Delete playlist</ion-label>
+                  </ion-item>
+                </ion-list>
+              </ion-popover>
             </ion-buttons>
           </ion-toolbar>
         </ion-header>
@@ -45,7 +60,8 @@ export class Playlist {
             <ion-icon slot="start" name="play"></ion-icon>
             Play
           </ion-button>
-          <ion-button size="large" color="tertiary" class="button-shuffle">
+          <ion-button size="large" color="tertiary" class="button-shuffle"
+                      onClick={shufflePlaylist}>
             <ion-icon slot="icon-only" name="shuffle"></ion-icon>
           </ion-button>
           <ion-button size="large" color="secondary" class="button-more">
@@ -60,7 +76,7 @@ export class Playlist {
                 <ion-item>
                   <div slot="start">{index + 1}</div>
                   <ion-label>
-                    <h2>{song.name}</h2>
+                    <h3>{song.name}</h3>
                     <p>{song.album}</p>
                   </ion-label>
                   <ion-button slot="end" color="dark">

@@ -1,5 +1,5 @@
 ion-col > div {
-  background-color: var(--mat-sys-inverse-surface);
-  border: solid 1px var(--mat-sys-outline);
+  background-color: var(--md-sys-inverse-surface);
+  border: solid 1px var(--md-sys-outline);
   padding: 10px;
 }

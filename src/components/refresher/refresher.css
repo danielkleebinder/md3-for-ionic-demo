@@ -24,7 +24,7 @@ component-refresher .dot-unread {
 }
 
 component-refresher .unread {
-  background-color: var(--mat-sys-primary);
+  background-color: var(--md-sys-primary);
 }
 
 component-refresher ion-item h2,

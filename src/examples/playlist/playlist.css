@@ -14,7 +14,7 @@ ion-content {
 }
 
 .playlist-image {
-  border-radius: var(--mat-sys-corner-large);
+  border-radius: var(--md-sys-corner-large);
   overflow: hidden;
 }
 
@@ -39,8 +39,8 @@ ion-content {
 
 .playlist-list {
   [slot=start] {
-    font: var(--mat-sys-title-large);
-    letter-spacing: var(--mat-sys-title-large-letter-spacing);
+    font: var(--md-sys-title-large);
+    letter-spacing: var(--md-sys-title-large-letter-spacing);
   }
 
   ion-button[slot=end] {
